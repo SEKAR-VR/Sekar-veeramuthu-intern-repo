@@ -1,6 +1,6 @@
 # Professionalism Reflection
 
-## 1. Have you ever experienced or witnessed great teamwork and professionalism? What made it effective?
+## Have you ever experienced or witnessed great teamwork and professionalism? What made it effective?
 
 Yes, I have experienced great teamwork and professionalism during my onboarding at **Focus Bear**. One of my teammates, **Harrison**, guided me through the initial setup steps, which helped me get started smoothly. Additionally, I worked with **Neeraj** at our coworking space in **Swinburne**, where we collaborated on a session.
 
@@ -13,7 +13,7 @@ This experience was effective because:
 
 ---
 
-## 2. What steps can you take to make sure your communication is clear, respectful, and inclusive?
+## What steps can you take to make sure your communication is clear, respectful, and inclusive?
 
 To ensure my communication is **effective and inclusive**, I will:
 
@@ -25,7 +25,7 @@ To ensure my communication is **effective and inclusive**, I will:
 
 ---
 
-## 3. How can you help create a positive, fun, and professional work environment?
+## How can you help create a positive, fun, and professional work environment?
 
 I can contribute to a **positive and professional** work environment by:
 
@@ -34,4 +34,5 @@ I can contribute to a **positive and professional** work environment by:
 3. **Maintaining a Solution-Oriented Attitude** – Instead of focusing on problems, I will focus on finding solutions and keeping discussions constructive.
 4. **Balancing Fun & Productivity** – Engaging in casual, friendly conversations while ensuring that work responsibilities are met.
 5. **Respecting Diversity** – Being mindful of different working styles, communication preferences, and backgrounds to create an inclusive workplace.
+
 
