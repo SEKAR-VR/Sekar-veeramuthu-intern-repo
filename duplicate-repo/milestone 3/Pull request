@@ -1,0 +1,10 @@
+# Git Understanding
+
+## Why are PRs important in a team workflow?
+PRs are important in a team because they allow everyone to check each other's work before it’s added to the main project. This helps prevent mistakes, improves code quality, and keeps things organized. It also allows the team to have discussions and suggest changes in a structured way. PRs make sure that everyone is aware of what’s changing and why.
+
+## What makes a well-structured PR?
+A good PR has a clear title, a short but clear explanation of what was changed and why, and it should be easy to understand. It also helps to link any related issues and break the changes into smaller commits. If the code is clean and follows the project’s style, it’s easier for others to review. Having tests pass is also important so the team knows the changes didn’t break anything.
+
+## What did I learn from reviewing an open-source PR?
+I learned that open-source projects have a very respectful and helpful review process. Reviewers give feedback politely and suggest ways to improve the code. I saw that changes often go through a few rounds of suggestions and updates before they’reaccepted. It was interesting to see how everyone works together to improve the project. I also noticed how important automated tests are before merging any changes.
