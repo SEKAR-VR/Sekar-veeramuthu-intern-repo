@@ -37,3 +37,32 @@ Clear commit messages help teammates quickly understand what each change does wi
 How can poor commit messages cause issues later?
 Poor commit messages like “updated stuff” or “fixed bugs” don’t tell you what was actually done. Later, if someone needs to understand why something changed or fix a bug, it’s harder to trace the problem. It can lead to confusion, mistakes, and wasted time trying to figure things out.
 
+## Exploring More Git Commands
+
+### What does each command do?
+
+- **`git checkout main -- <file>`**: Restores a specific file from the `main` branch. Helpful when you want to undo changes to one file without affecting others.
+
+- **`git cherry-pick <commit>`**: Takes one commit from another branch and applies it to your current branch. You can use it to bring in one useful change without merging the whole branch.
+
+- **`git log`**: Shows the project’s commit history. You can see who made changes, when, and what they changed.
+
+- **`git blame <file>`**: Shows who last edited each line of a file and when. Useful for tracking changes and asking questions about specific lines.
+
+---
+
+### When would you use these in a real project?
+
+- Use **`checkout`** when you only want to undo changes in one file, not the whole project.
+- Use **`cherry-pick`** when someone made a fix on another branch, and you want only that change.
+- Use **`log`** to understand what happened in the project over time or find a specific commit.
+- Use **`blame`** when debugging or trying to understand why something was written a certain way.
+
+---
+
+### What surprised me while testing these commands
+
+I was surprised how easy it was to fix just one file using `git checkout`.  
+`git cherry-pick` was really cool—it let me pull in one commit without merging everything.  
+And `git blame` was very detailed; I could see exactly who changed each line.  
+These tools are really powerful, especially when working in a team with lots of changes.
