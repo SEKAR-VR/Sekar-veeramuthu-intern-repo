@@ -1,4 +1,22 @@
 # Git Understanding
+## Staging vs Committing in Git
+
+### What is the difference between staging and committing?
+Staging is the step where you prepare files to be committed. You use `git add` to tell Git which changes you want to include in the next commit. Committing is when you actually save those staged changes to the project history using `git commit`.
+
+---
+
+### Why does Git separate these two steps?
+Git separates staging and committing so that developers can review and group their changes before saving them. This allows better control over what gets committed and helps make the project history cleaner and more understandable.
+
+---
+
+### When would you want to stage changes without committing?
+You might want to stage changes without committing when:
+- You're not finished but want to prepare parts of your work
+- You want to group related changes together into one commit later
+- You’re working on multiple files but only want to commit a few of them for now
+
 
 ## Why are PRs important in a team workflow?
 PRs are important in a team because they allow everyone to check each other's work before it’s added to the main project. This helps prevent mistakes, improves code quality, and keeps things organized. It also allows the team to have discussions and suggest changes in a structured way. PRs make sure that everyone is aware of what’s changing and why.
