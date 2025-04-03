@@ -82,3 +82,20 @@ I was surprised how easy it was to fix just one file using `git checkout`.
 `git cherry-pick` was really cool—it let me pull in one commit without merging everything.  
 And `git blame` was very detailed; I could see exactly who changed each line.  
 These tools are really powerful, especially when working in a team with lots of changes.
+##  Branching & Team Collaboration
+
+### Why is pushing directly to main problematic?
+
+I learned that pushing directly to `main` can be risky because any mistakes or bugs go straight into the official project. This could break the code or affect other developers' work. When I switched back to `main` after committing on `conflict-branch`, I saw that my changes were not there — which means I kept the `main` branch clean and safe.
+
+---
+
+### How do branches help with reviewing code?
+
+Through experimenting with `conflict-branch`, I saw that branches give developers a safe space to work on features or fixes without affecting the main code. Teams can review, test, and give feedback before anything is merged. This helps catch problems early and keeps everything organized. I now understand why pull requests are linked to branches — it’s all part of a clean review process.
+
+---
+
+### What happens if two people edit the same file on different branches?
+
+From my experience testing this with changes on `conflict-branch`, I realized that if two people edit the same file in different branches, Git handles them separately. But when the branches are merged, there can be **merge conflicts** if the same lines are changed. This made it clear to me why communication and branching are important — so developers can work in parallel without overwriting each other’s work.
