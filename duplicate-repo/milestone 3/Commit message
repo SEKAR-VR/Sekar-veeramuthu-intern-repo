@@ -1,0 +1,9 @@
+What makes a good commit message?
+A good commit message is short, clear, and explains exactly what was changed and why. It should start with a summary line using present tense (e.g., “Add login button”), and if needed, including a short explanation below with more details. It helps make the project history easy to understand.
+
+How does a clear commit message help in team collaboration?
+Clear commit messages help teammates quickly understand what each change does without having to read through all the code. This saves time during reviews, improves communication, and makes it easier for others to troubleshoot, improve, or continue the work.
+
+How can poor commit messages cause issues later?
+Poor commit messages like “updated stuff” or “fixed bugs” don’t tell you what was actually done. Later, if someone needs to understand why something changed or fix a bug, it’s harder to trace the problem. It can lead to confusion, mistakes, and wasted time trying to figure things out.
+
