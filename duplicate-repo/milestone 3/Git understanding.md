@@ -36,6 +36,22 @@ Clear commit messages help teammates quickly understand what each change does wi
 
 How can poor commit messages cause issues later?
 Poor commit messages like “updated stuff” or “fixed bugs” don’t tell you what was actually done. Later, if someone needs to understand why something changed or fix a bug, it’s harder to trace the problem. It can lead to confusion, mistakes, and wasted time trying to figure things out.
+## Merge Conflict Reflection
+
+### What caused the conflict?
+The conflict was caused because I edited the same part of the same file (`Commit message.md`) in two different branches. Git couldn’t decide which version to keep when I tried to merge the branches, so it asked me to resolve the conflict manually.
+
+### How did you resolve it?
+I opened the file in VS Code and saw the conflict markers:
+- `<<<<<<< HEAD` (the version from `main`)
+- `=======` (the separator)
+- `>>>>>>> branch-name` (the version from the other branch)
+
+I chose the version I wanted to keep (or combined both), then deleted the conflict markers, saved the file, ran `git add .`, and committed the fix with:
+
+```bash
+git commit -m "Resolved merge conflict in Commit message.md"
+
 
 ## Exploring More Git Commands
 
