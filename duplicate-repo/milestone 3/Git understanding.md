@@ -1,4 +1,22 @@
 # Git Understanding
+## Staging vs Committing in Git
+
+### What is the difference between staging and committing?
+Staging is the step where you prepare files to be committed. You use `git add` to tell Git which changes you want to include in the next commit. Committing is when you actually save those staged changes to the project history using `git commit`.
+
+---
+
+### Why does Git separate these two steps?
+Git separates staging and committing so that developers can review and group their changes before saving them. This allows better control over what gets committed and helps make the project history cleaner and more understandable.
+
+---
+
+### When would you want to stage changes without committing?
+You might want to stage changes without committing when:
+- You're not finished but want to prepare parts of your work
+- You want to group related changes together into one commit later
+- You’re working on multiple files but only want to commit a few of them for now
+
 
 ## Why are PRs important in a team workflow?
 PRs are important in a team because they allow everyone to check each other's work before it’s added to the main project. This helps prevent mistakes, improves code quality, and keeps things organized. It also allows the team to have discussions and suggest changes in a structured way. PRs make sure that everyone is aware of what’s changing and why.
@@ -36,6 +54,22 @@ Clear commit messages help teammates quickly understand what each change does wi
 
 How can poor commit messages cause issues later?
 Poor commit messages like “updated stuff” or “fixed bugs” don’t tell you what was actually done. Later, if someone needs to understand why something changed or fix a bug, it’s harder to trace the problem. It can lead to confusion, mistakes, and wasted time trying to figure things out.
+## Merge Conflict Reflection
+
+### What caused the conflict?
+The conflict was caused because I edited the same part of the same file (`Commit message.md`) in two different branches. Git couldn’t decide which version to keep when I tried to merge the branches, so it asked me to resolve the conflict manually.
+
+### How did you resolve it?
+I opened the file in VS Code and saw the conflict markers:
+- `<<<<<<< HEAD` (the version from `main`)
+- `=======` (the separator)
+- `>>>>>>> branch-name` (the version from the other branch)
+
+I chose the version I wanted to keep (or combined both), then deleted the conflict markers, saved the file, ran `git add .`, and committed the fix with:
+
+```bash
+git commit -m "Resolved merge conflict in Commit message.md"
+
 
 ## Exploring More Git Commands
 
@@ -66,3 +100,20 @@ I was surprised how easy it was to fix just one file using `git checkout`.
 `git cherry-pick` was really cool—it let me pull in one commit without merging everything.  
 And `git blame` was very detailed; I could see exactly who changed each line.  
 These tools are really powerful, especially when working in a team with lots of changes.
+##  Branching & Team Collaboration
+
+### Why is pushing directly to main problematic?
+
+I learned that pushing directly to `main` can be risky because any mistakes or bugs go straight into the official project. This could break the code or affect other developers' work. When I switched back to `main` after committing on `conflict-branch`, I saw that my changes were not there — which means I kept the `main` branch clean and safe.
+
+---
+
+### How do branches help with reviewing code?
+
+Through experimenting with `conflict-branch`, I saw that branches give developers a safe space to work on features or fixes without affecting the main code. Teams can review, test, and give feedback before anything is merged. This helps catch problems early and keeps everything organized. I now understand why pull requests are linked to branches — it’s all part of a clean review process.
+
+---
+
+### What happens if two people edit the same file on different branches?
+
+From my experience testing this with changes on `conflict-branch`, I realized that if two people edit the same file in different branches, Git handles them separately. But when the branches are merged, there can be **merge conflicts** if the same lines are changed. This made it clear to me why communication and branching are important — so developers can work in parallel without overwriting each other’s work.
