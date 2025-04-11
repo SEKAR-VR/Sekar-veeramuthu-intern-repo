@@ -7,7 +7,7 @@ I hope to gain practical experience in automated quality assurance workflows wit
 ## What skills are you most excited to develop?
 
 I’m most excited to develop my skills in:
-- Writing and maintaining automated tests (e.g., Playwright, Cypress)
+- Writing and maintaining automated tests 
 - Understanding and contributing to CI workflows using GitHub Actions
 - Applying clean code principles and code review feedback
 - Communicating effectively in a professional development team
